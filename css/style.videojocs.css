@@ -1,0 +1,148 @@
+html {
+    font-size: 50px;
+}
+body {
+    margin: 0;
+    font-family: 'Bruno Ace SC', cursive;
+    background-color: rgb(122, 43, 226);
+}
+header {
+    height: 106vh;
+}
+/* indica el estilo css de los div que se encuentran dentro del encabezado */
+.headerzelda {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./../img/headerzelda.jpg");
+    background-size: cover;
+    position: relative;
+}
+.headerminecraft {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./../img/headerminecraft.jpg");
+    background-size: cover;
+    position: relative;
+}
+.headerpacman {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./../img/headerpacman.jpg");
+    background-size: cover;
+    position: relative;
+}
+.headergta5 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./../img/headergta.jpg");
+    background-size: cover;
+    position: relative;
+}
+.headerrdr2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./../img/headerrdr2.jpg");
+    background-size: cover;
+    position: relative;
+}
+/* indica el estilo css de todos los elementos p de los div que se encuentran dentro del encabezado */
+header div p {
+    font-size: 2.7rem;
+    text-align: center; 
+    color: rgb(0, 0, 0);
+}
+header .headerpacman p {
+    font-size: 2.7rem;
+    text-align: center; 
+    color: rgb(255, 255, 255);
+}
+header .headerrdr2 p {
+    font-size: 2.7rem;
+    text-align: center; 
+    color: rgb(255, 255, 255);
+}
+.rowpresentacion {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+}
+.column-2-1 {
+    width: 65%;
+}
+.column-2-1 p {
+    font-size: 0.7rem;
+}
+.column-2-2 {
+    width: 35%;
+}
+.column-2-2 img {
+    width: 50%;
+    vertical-align: center;
+    border-radius: 10px;
+}
+.margintop {
+    margin-top: 7%;
+}
+.column-2-50 {
+    width: 50%;
+}
+.column-2-50 p {
+    font-size: 0.7rem;
+}
+.comprar {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.rowvideo {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+.rowvideo p {
+    font-size: 0.7rem;
+}
+footer {
+	padding: 3px;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+}
+.column-3-footer {
+    width: 33.33%;
+    background-color: black;
+    color: white;
+}
+.column-3-footer p {
+    font-size: 0.3rem;
+}
