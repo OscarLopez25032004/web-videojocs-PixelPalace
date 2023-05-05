@@ -1,11 +1,14 @@
+/* indica el estilo del html */
 html {
     font-size: 50px;
 }
+/* indica el estilo del cuerpo de la pagina */
 body {
     margin: 0;
     font-family: 'Bruno Ace SC', cursive;
     background-color: rgb(122, 43, 226);
 }
+/* indica el encabezado de la pagina */
 header {
     height: 106vh;
     background-image: url("./../img/img-top.jpg");
@@ -28,6 +31,7 @@ header div p {
     color: rgb(118, 181, 206);
     border: 2px solid rgb(61, 147, 180);
 }
+/* Estiliza la sección de presentación con una fila flexible y centrada */
 .rowpresentacion {
     display: flex;
     flex-wrap: wrap;
@@ -35,16 +39,19 @@ header div p {
     margin: 0 auto;
     text-align: center;
 }
+/* Establece el ancho de la primera columna en un diseño de 2 columnas */
 .column-2-1 {
     width: 65%;
 }
+/* Establece el tamaño de fuente del párrafo en la columna 2-1 */
 .column-2-1 p {
     font-size: 0.7rem;
 }
+/* Establece el ancho de la segunda columna en un diseño de 2 columnas */
 .column-2-2 {
     width: 35%;
 }
-/* indica el estilo css de las columnas de la pagina */
+/* Estiliza la primera fila con un diseño flexible y centrado */
 .row1 {
     display: flex;
     flex-wrap: wrap;
@@ -52,31 +59,40 @@ header div p {
     text-align: center;
     justify-content: center;
 }
-/* indica el tamaño del titulo de los grupos */
+/* Establece el ancho de la columna del título de productos */
 .coltituloproductos {
     width: 100%;
 }
-/* indica el estilo css del titulo de los grupos */
+/* Estiliza el título de la sección de juegos */
 .titulogames {
     text-align: center;
     font-size: 1rem;
 }
+/* Estiliza la imagen de los productos */
 .stylesimgprod {
     width: 80%;
     vertical-align: center;
     border-radius: 10px;
 }
+/* Establece el ancho y borde de las columnas en un diseño de 3 columnas */
 .column-3 {
     width: 32.33%;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 10px;
 }
+/* Establece el tamaño de fuente del párrafo en la columna 3 */
 .column-3 p {
     font-size: 0.7rem;
 }
+/* Aumenta el tamaño de la imagen al pasar el cursor sobre ella */
+.column-3 img:hover {
+    transform:scale(1.03);
+}
+/* Establece el margen superior de la imagen */
 .margintopimg {
     margin-top: 7%;
 }
+/* Estiliza la fila 1-1 con un diseño flexible y centrado */
 .row1-1 {
     display: flex;
     flex-wrap: wrap;
@@ -86,25 +102,78 @@ header div p {
     justify-content: center;
     margin-top: 1%;
 }
+/* Establece el ancho y borde de las columnas en un diseño de 2 columnas */
 .column-2 {
     width: 32.33%;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 10px;
 }
+/* Establece el tamaño de fuente del párrafo en la columna 2 */
 .column-2 p {
     font-size: 0.7rem;
 }
+/* Estiliza el pie de página */
 footer {
 	padding: 3px;
 	width: 100%;
 	bottom: 0;
 	left: 0;
 }
+/* Establece el ancho y colores de las columnas en el pie de página */
 .column-3-footer {
     width: 33.33%;
     background-color: black;
     color: white;
 }
+/* Establece el tamaño de fuente del párrafo en las columnas del pie de página */
 .column-3-footer p {
     font-size: 0.3rem;
+}
+/* Estiliza la barra de navegación */
+.navbar {
+    background-color: rgb(122, 43, 226);
+}
+/* Estiliza la marca de la barra de navegación */
+.navbar-brand {
+    color: rgb(129, 221, 233);
+    font-size: 0.7rem;
+    text-decoration: none;
+}
+/* Estiliza los enlaces de la barra de navegación */
+.navbar-nav > li > a {
+    color: rgb(129, 221, 233);
+    font-size: 0.4rem;
+}
+/* Cambia el color de los enlaces de la barra de navegación al pasar el cursor sobre ellos */
+.navbar-nav > li > a:hover {
+    color: rgb(49, 230, 109);
+}
+/* Establece el margen izquierdo del contenedor fluido */
+.container-fluid {
+    margin-left: 5%;
+}
+/* Estilos responsivos para pantallas con un ancho máximo de 600px */
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 25px;
+    }
+    .column-3 {
+        width: 50%;
+    }
+    .column-2 {
+        width: 50%;
+    }
+    .column-2-1 {
+        width: 100%;
+    }
+    .column-2-2 {
+        width: 100%;
+    }
+    .navbar {
+        margin-top: 3%;
+        text-align: center;
+    }
+    .column-3 img:hover {
+        transform:scale(1.02);
+    }
 }

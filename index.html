@@ -14,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+    <!-- indican los script del bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
     <!-- indica el encabezado de la pagina -->
@@ -22,18 +25,35 @@
             <p>Pixel Palace</p>
         </div>
     </header>
+    <!-- indica el nav con bootstrap -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Pixel Palace</a>
+            </div>
+            <ul class="navbar-nav">
+                <li><a href="./view/videojoc1.html">The legend of Zelda: Breath of the Wild</a></li>
+                <li><a href="./view/videojoc2.html">Minecraft</a></li>
+                <li><a href="./view/videojoc3.html">Pac-Man</a></li>
+                <li><a href="./view/videojoc4.html">Grand Theft Auto V</a></li>
+                <li><a href="./view/videojoc5.html">Red Dead Redemption II</a></li>
+            </ul>
+        </div>
+    </nav>
     <main>
         <div>
             <div class="rowpresentacion">
+                <!-- indica el objetivo de la tienda -->
                 <div class="column-2-1">
-                    <p>L'objectiu de la botiga de videojocs <strong>Pixel Palace</strong>, creada per <strong>Jordi Sorribes</strong> i <strong>Oscar López</strong>, es oferir una àmplia selecció de jocs per a totes les plataformes i edats, proporcionar un servei al client excepcional i crear una comunitat de jugadors apassionats al voltant de la seva marca.</p>
+                    <p class="margintopimg">L'objectiu de la botiga de videojocs <strong>Pixel Palace</strong>, creada per <strong>Jordi Sorribes</strong> i <strong>Oscar López</strong>, es oferir una àmplia selecció de jocs per a totes les plataformes i edats, proporcionar un servei al client excepcional i crear una comunitat de jugadors apassionats al voltant de la seva marca.</p>
                 </div>
+                <!-- indica la imagen de la tienda -->
                 <div class="column-2-2">
-                    <img src="./img/">
+                    <img src="./img/jordiioscar.jpg" class="stylesimgprod margintopimg">
                 </div>
             </div>
         </div>
-        <!-- indica el titulo y las 8 imagenes de la primera fila -->
+        <!-- indica las imagenes y titulos de los videojuegos -->
         <div id="grupos" class="row1">
             <div class="coltituloproductos">
                 <p class="titulogames">Productes</p>
@@ -62,6 +82,7 @@
             </div>
         </div>
     </main>
+    <!-- indica el pie de pagina -->
     <footer>
         <div class="row1">
 			<div class="column-3-footer">

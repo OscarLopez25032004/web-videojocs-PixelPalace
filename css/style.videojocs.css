@@ -1,15 +1,18 @@
+/* Establece el tamaño de fuente base para el documento */
 html {
     font-size: 50px;
 }
+/* Estiliza el cuerpo del documento */
 body {
     margin: 0;
     font-family: 'Bruno Ace SC', cursive;
     background-color: rgb(122, 43, 226);
 }
+/* Estiliza el encabezado */
 header {
     height: 106vh;
 }
-/* indica el estilo css de los div que se encuentran dentro del encabezado */
+/* Estiliza los diferentes encabezados de juegos */
 .headerzelda {
     position: absolute;
     width: 100%;
@@ -21,6 +24,7 @@ header {
     background-size: cover;
     position: relative;
 }
+/* Estiliza los diferentes encabezados de juegos */
 .headerminecraft {
     position: absolute;
     width: 100%;
@@ -32,6 +36,7 @@ header {
     background-size: cover;
     position: relative;
 }
+/* Estiliza los diferentes encabezados de juegos */
 .headerpacman {
     position: absolute;
     width: 100%;
@@ -43,6 +48,7 @@ header {
     background-size: cover;
     position: relative;
 }
+/* Estiliza los diferentes encabezados de juegos */
 .headergta5 {
     position: absolute;
     width: 100%;
@@ -54,6 +60,7 @@ header {
     background-size: cover;
     position: relative;
 }
+/* Estiliza los diferentes encabezados de juegos */
 .headerrdr2 {
     position: absolute;
     width: 100%;
@@ -65,22 +72,25 @@ header {
     background-size: cover;
     position: relative;
 }
-/* indica el estilo css de todos los elementos p de los div que se encuentran dentro del encabezado */
+/* Estiliza los párrafos de los encabezados de juegos */
 header div p {
     font-size: 2.7rem;
     text-align: center; 
     color: rgb(0, 0, 0);
 }
+/* Estiliza los párrafos de los encabezados de juegos */
 header .headerpacman p {
     font-size: 2.7rem;
     text-align: center; 
     color: rgb(255, 255, 255);
 }
+/* Estiliza los párrafos de los encabezados de juegos */
 header .headerrdr2 p {
     font-size: 2.7rem;
     text-align: center; 
     color: rgb(255, 255, 255);
 }
+/* Estilos previamente explicados */
 .rowpresentacion {
     display: flex;
     flex-wrap: wrap;
@@ -89,29 +99,29 @@ header .headerrdr2 p {
     text-align: center;
     justify-content: center;
 }
+/* indica la columna dividida en 65% */
 .column-2-1 {
     width: 65%;
 }
+/* indica el parrafo de la columna dividida */
 .column-2-1 p {
     font-size: 0.7rem;
 }
+/* indica la columna dividida en 35% */
 .column-2-2 {
     width: 35%;
 }
+/* indica el estilo de las iamgenes de la columna dividida */
 .column-2-2 img {
     width: 50%;
     vertical-align: center;
     border-radius: 10px;
 }
+/* indica el margen top */
 .margintop {
     margin-top: 7%;
 }
-.column-2-50 {
-    width: 50%;
-}
-.column-2-50 p {
-    font-size: 0.7rem;
-}
+/* indica el estilo del boton */
 .comprar {
     background-color: #008CBA;
     color: white;
@@ -124,25 +134,45 @@ header .headerrdr2 p {
     cursor: pointer;
     border-radius: 5px;
 }
+/* indica el estilo del video del trailer */
 .rowvideo {
     width: 100%;
     text-align: center;
     justify-content: center;
 }
+/* indica el estilo del parrafo del trailer */
 .rowvideo p {
     font-size: 0.7rem;
 }
+ /* indica el estilo del pie de pagina */
 footer {
 	padding: 3px;
 	width: 100%;
 	bottom: 0;
 	left: 0;
 }
+/* indica el estilo de las columnas del footer */
 .column-3-footer {
     width: 33.33%;
     background-color: black;
     color: white;
 }
+/* indica el estilo de los parrafos de las columnas del footer */
 .column-3-footer p {
     font-size: 0.3rem;
+}
+/* Estilos responsivos para pantallas con un ancho máximo de 800px */
+@media screen and (max-width: 800px) {
+    html {
+        font-size: 25px;
+    }
+    header {
+        height: 80vh;
+    }
+    .column-2-1 {
+        width: 100%;
+    }
+    .column-2-2 {
+        width: 100%;
+    }
 }
